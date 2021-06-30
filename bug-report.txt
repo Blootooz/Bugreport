@@ -1,0 +1,317 @@
+﻿БАГ-РЕПОРТЫ
+Bug_N1
+Title: Название формы написанно без пробелов
+Precondition: зайти на http://itcareer.pythonanywhere.com 
+Environment: 
+Диагональ – 17,8, резрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com 
+2. смотрим название формы
+ER: IT Career Today web form
+AR: ITCareerToday web form
+
+
+Attachments:
+
+
+
+
+  
+
+Bug_N2
+Title: Разные знаки пунктуации в подсказках полей.
+Precondition: заходим на http://itcareer.pythonanywhere.com
+Environment: 
+Диагональ – 17,8, резрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+
+
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com 
+2. смотрим на знаки пунктуации полей.
+ER: Name? Surname? Your email address. Enter a password.
+AR: Name? Surname? Your email address? Enter a password?
+
+
+Attachments:
+  
+________________
+
+Bug_N3
+Title: Орфографическая ошибка в  название поля surname
+Precondition: заходим на http://itcareer.pythonanywhere.com 
+Environment: 
+Диагональ – 17,8, резрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+
+
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com 
+2. смотрим название поля surname
+ER: surname
+AR: surame
+
+
+Attachments:
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bug_N4
+Title: расположение текста на кнопке submit не по центру
+Precondition: заходим на http://itcareer.pythonanywhere.com 
+Environment: 
+Диагональ – 17,8, резрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com 
+2. смотрим на расположение текста на кнопке submit
+ER: корректный вид текста посередине кнопки
+AR: 
+
+
+Attachments:
+  
+ 
+
+
+
+
+
+
+Bug_N5
+Title: Синтаксически неправильное отображение сообщения об ошибке
+Precondition: заходим на http://itcareer.pythonanywhere.com , заполнить форму, намеренно допустив ошибку.
+Environment: 
+Диагональ – 17,8, резрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com 
+2. выбираем поле Name
+3. вводим одну букву
+4. после поле password нам выведется окно с ошибкой
+ER: ERROR: All fields are required
+AR: Error:Error:All fields are required
+
+
+Attachments:
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bug_N6
+Title: несоблюдение языковых требований заполнения формы
+Precondition: заходим на http://itcareer.pythonanywhere.com 
+Environment: 
+Диагональ – 17,8, разрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com 
+2. заполняем все поля кириллицей
+3. нажимаем на submit
+4. видим приветственное сообщение, об успешной регистрации
+ER: корректный вид, форма должна выдать нам ошибку, т.к. не соблюдалось правило - заполнения заполнение данной формы латиницей.
+AR: Появилось приветственное сообщение, об успешной регистрации.
+
+
+Attachments:
+  
+  
+
+Bug_N7
+Title: несоответствие минимального значения для полей Name, Surname.
+Precondition: заходим на http://itcareer.pythonanywhere.com 
+Environment: 
+Диагональ – 17,8, разрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com 
+2. заполняем  поле Name/Surname одной буквой
+3. нажимаем на submit
+4. видим  сообщение об ошибке регистрации
+ER: форма должна выдать нам приветственное сообщение, т.к. соблюдалось правило заполнения минимальным количеством букв.
+AR: Появилось сообщение об ошибке регистрации.
+
+
+Attachments:
+  
+
+
+
+
+
+
+
+Bug_N8
+Title: несоответствие максимального значения для полей Name, Surname.
+Precondition: заходим на http://itcareer.pythonanywhere.com 
+Environment: 
+Диагональ – 17,8, разрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com 
+2. заполняем  поле Name/Surname 128 буквой
+3. нажимаем на submit
+4. видим  сообщение об ошибке регистрации
+ER: форма должна выдать нам приветственное сообщение, т.к. соблюдалось правило заполнения максимальным количеством букв.
+AR: Появилось сообщение об ошибке регистрации.
+
+
+Attachments:
+
+
+
+
+
+
+
+
+  
+
+
+
+Bug_N9
+Title: не подсвечивается заполненное поле password
+Precondition: заходим на http://itcareer.pythonanywhere.com
+Environment: 
+Диагональ – 17,8, разрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com
+2. заполняем все поля формы валидными значениями
+3. нажимаем кнопку submit
+ER: Все заполненные поля должны подсвечиваться
+AR: заполненное поле password не подсвечивается
+
+
+Attachments:
+  
+
+Bug_N10
+Title: в поле email можно указывать email с дефисом в доменной части
+Precondition: заходим на http://itcareer.pythonanywhere.com
+Environment: 
+Диагональ – 17,8, разрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com
+2. заполняем все поля формы валидными значениями
+3.  в поле email указываем email с дефисом в доменной части(shhiva@yand-ex.ru)
+4. нажимаем кнопку submit
+ER: Сервер должен выдать сообщение об  ошибке
+AR: Появилось приветственное сообщение, об успешной регистрации.
+
+
+Attachments:
+  
+
+
+
+Bug_N11
+Title: в поле email можно указывать email со знаком подчеркивания в доменной части
+Precondition: заходим на http://itcareer.pythonanywhere.com
+Environment: 
+Диагональ – 17,8, разрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com
+2. заполняем все поля формы валидными значениями
+3.  в поле email указываем email со знаком подчеркивания в доменной части (shhiva@yan_dex.ru)
+4. нажимаем кнопку submit
+ER: Сервер должен выдать сообщение об  ошибке
+AR: Появилось приветственное сообщение, об успешной регистрации.
+
+
+Attachments:
+  
+
+
+
+
+
+
+
+Bug_N12
+Title: в поле email можно указывать email с несколькими точками в доменной части
+Precondition: заходим на http://itcareer.pythonanywhere.com
+Environment: 
+Диагональ – 17,8, разрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com
+2. заполняем все поля формы валидными значениями
+3. в поле email указываем email с несколькими точками в доменной части(shhiva@yand..ex.ru)
+4. нажимаем кнопку submit
+ER: Сервер должен выдать сообщение об  ошибке
+AR: Появилось приветственное сообщение, об успешной регистрации.
+
+
+Attachments:
+  
+
+
+
+Bug_N13
+Title: в поле email можно указывать email без точек в доменной части
+Precondition: заходим на http://itcareer.pythonanywhere.com
+Environment: 
+Диагональ – 17,8, разрешение экрана – 1920x1080; браузер , версия браузера – Google Chrome Версия 91.0.4472.77 (Официальная сборка), (64 бит)
+Steps: 
+1. заходим на http://itcareer.pythonanywhere.com
+2. заполняем все поля формы валидными значениями
+3. в поле email указываем email без точек в доменной части (shhiva@yandexru)
+4. нажимаем кнопку submit
+ER: Сервер должен выдать сообщение об  ошибке
+AR: Появилось приветственное сообщение, об успешной регистрации.
+
+
+Attachments:
